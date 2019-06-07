@@ -1,0 +1,708 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Flug/Home</title>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--===============================================================================================-->
+    <link rel="icon" type="image/png" href=@Url.Content("/Content/images/icons/favicon.png")>
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href=@Url.Content("/Content/vendor/bootstrap/css/bootstrap.min.css")>
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href=@Url.Content("/Content/fonts/font-awesome-4.7.0/css/font-awesome.min.css")>
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href=@Url.Content("/Content/fonts/iconic/css/material-design-iconic-font.min.css")>
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href=@Url.Content("/Content/fonts/linearicons-v1.0.0/icon-font.min.css")>
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href=@Url.Content("/Content/vendor/animate/animate.css")>
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href=@Url.Content("/Content/vendor/css-hamburgers/hamburgers.min.css")>
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href=@Url.Content("/Content/vendor/animsition/css/animsition.min.css")>
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href=@Url.Content("/Content/vendor/select2/select2.min.css")>
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href=@Url.Content("/Content/vendor/daterangepicker/daterangepicker.css")>
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href=@Url.Content("/Content/vendor/slick/slick.css")>
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href=@Url.Content("/Content/vendor/MagnificPopup/magnific-popup.css")>
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href=@Url.Content("/Content/vendor/perfect-scrollbar/perfect-scrollbar.css")>
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href=@Url.Content("/Content/css/util.css")>
+    <link rel="stylesheet" type="text/css" href=@Url.Content("/Content/css/main.css")>
+    <!--===============================================================================================-->
+</head>
+<body class="animsition">
+   
+       <!-- Header -->
+        <header class="header-v2">
+            <!-- Header desktop -->
+            <div class="container-menu-desktop trans-03">
+                <div class="wrap-menu-desktop">
+                    <nav class="limiter-menu-desktop p-l-45">
+
+                        <!-- Logo desktop -->
+                        <a href="#" class="logo">
+                            <img src=@Url.Content("/Content/images/icons/fluglogo.png")  alt="IMG-LOGO">
+                        </a>
+
+                        <!-- Menu desktop -->
+                        <div class="menu-desktop">
+                            <ul class="main-menu">
+                                <li class="active-menu">
+                                    <a href="">Home</a>
+                                </li>
+
+                                <li>
+                                    <a href=@Url.Content("/Content/orders.html")>Orders</a>
+                                </li>
+
+                                <li class="label1" data-label1="hot">
+                                    <a href=@Url.Content("/Content/shoping-cart.html")>Offers</a>
+                                </li>
+
+
+                                <li>
+                                    <a href=@Url.Content("/Content/trips.html")>Trips</a>
+                                </li>
+
+
+
+                                <li>
+                                    <a href=@Url.Content("/Content/about.html")>About</a>
+                                </li>
+
+                                <li>
+                                    <a href=@Url.Content("/Content/contact.html")>Contact</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <!-- Icon header -->
+                        <div class="wrap-icon-header flex-w flex-r-m h-full">
+                            <div class="flex-c-m h-full p-r-24">
+                                
+                                <div class="icon-header-item cl2 hov-cl1 trans-04 p-lr-11 js-show-modal-search">
+                                    <i class="zmdi zmdi-inbox"></i>
+                                </div>
+                            </div>
+
+                            <div class="flex-c-m h-full p-l-18 p-r-25 bor5">
+                                <div class="icon-header-item cl2 hov-cl1 trans-04 p-lr-11 icon-header-noti js-show-cart" data-notify="2">
+                                    <i class="zmdi zmdi-notifications"></i>
+                                </div>
+                            </div>
+
+                            <div class="flex-c-m h-full p-lr-19">
+                                <div class="icon-header-item cl2 hov-cl1 trans-04 p-lr-11 js-show-sidebar">
+                                    
+                                        <img src="~/Content/images/nada.jpg" alt="Avatar" style="border-radius: 50%; width: 40px; height: 40px;">
+                                    
+                                    </div>
+                                </div>
+
+
+                            </div>
+                            
+                    </nav>
+                </div>
+            </div>
+
+            <!-- Header Mobile -->
+            <div class="wrap-header-mobile">
+                <!-- Logo moblie -->
+                <div class="logo-mobile">
+                    <a href="index.html"><img src=@Url.Content("/Content/images/icons/fluglogo.png") alt="IMG-LOGO"></a>
+                </div>
+
+                <!-- Icon header -->
+                <div class="wrap-icon-header flex-w flex-r-m h-full m-r-15">
+                    <div class="flex-c-m h-full p-r-10">
+                        <div class="icon-header-item cl2 hov-cl1 trans-04 p-lr-11 js-show-modal-search">
+                            <i class="zmdi zmdi-inbox"></i>
+                        </div>
+                    </div>
+                    
+
+                        <div class="flex-c-m h-full p-lr-10 bor5">
+                            <div class="icon-header-item cl2 hov-cl1 trans-04 p-lr-11 icon-header-noti js-show-cart" data-notify="2">
+                                <i class="zmdi zmdi-shopping-cart"></i>
+                            </div>
+                        </div>
+                </div>
+
+                    <!-- Button show menu -->
+                    <div class="btn-show-menu-mobile hamburger hamburger--squeeze">
+                        <span class="hamburger-box">
+                            <span class="hamburger-inner"></span>
+                        </span>
+                    </div>
+                </div>
+                
+
+            <!-- Menu Mobile -->
+            <div class="menu-mobile">
+                <ul class="main-menu-m">
+                    <li>
+                        <a href="index.html">Home</a>
+                        <ul class="sub-menu-m">
+                            <li><a href="index.html">Homepage 1</a></li>
+                            <li><a href="home-02.html">Homepage 2</a></li>
+                            <li><a href="home-03.html">Homepage 3</a></li>
+                        </ul>
+                        <span class="arrow-main-menu-m">
+                            <i class="fa fa-angle-right" aria-hidden="true"></i>
+                        </span>
+                    </li>
+
+                    <li>
+                        <a href="product.html">Shop</a>
+                    </li>
+
+                    <li>
+                        <a href="shoping-cart.html" class="label1 rs1" data-label1="hot">Features</a>
+                    </li>
+
+                    <li>
+                        <a href="blog.html">Blog</a>
+                    </li>
+
+                    <li>
+                        <a href="about.html">About</a>
+                    </li>
+
+                    <li>
+                        <a href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Modal Search -->
+            <div class="modal-search-header flex-c-m trans-04 js-hide-modal-search">
+                <div class="container-search-header">
+                    
+                        <a href="~/Content/Chat.html"></a>
+                   
+
+                   
+                </div>
+            </div>
+        </header>
+
+        <!-- Cart -->
+   
+        <!-- Sidebar -->
+        <aside class="wrap-sidebar js-sidebar">
+            <div class="s-full js-hide-sidebar"></div>
+
+            <div class="sidebar flex-col-l p-t-22 p-b-25">
+                <div class="flex-r w-full p-b-30 p-r-27">
+                    <div class="fs-35 lh-10 cl2 p-lr-5 pointer hov-cl1 trans-04 js-hide-sidebar">
+                        <i class="zmdi zmdi-close"></i>
+                    </div>
+                </div>
+
+                <div class="sidebar-content flex-w w-full p-lr-65 js-pscroll">
+                    <ul class="sidebar-link w-full">
+                      
+
+                        <li class="p-b-13">
+                            <a href="#" class="stext-102 cl2 hov-cl1 trans-04">
+                               My Profile
+                            </a>
+                        </li>
+
+                        <li class="p-b-13">
+                            <a href="#" class="stext-102 cl2 hov-cl1 trans-04">
+                                Payment
+                            </a>
+                        </li>
+
+                        <li class="p-b-13">
+                            <a href="#" class="stext-102 cl2 hov-cl1 trans-04">
+                                Track Oder
+                            </a>
+                        </li>
+
+                        <li class="p-b-13">
+                            <a href="#" class="stext-102 cl2 hov-cl1 trans-04">
+                                Logout
+                            </a>
+                        </li>
+
+                        
+                    </ul>
+
+                  </div>
+
+                        <div class="flex-w flex-sb p-t-36 gallery-lb">
+                            <!-- item gallery sidebar -->
+                            <div class="wrap-item-gallery m-b-10">
+                                <a class="item-gallery bg-img1" href="images/gallery-01.jpg" data-lightbox="gallery"
+                                   style="background-image: url('images/gallery-01.jpg');"></a>
+                            </div>
+
+                            <!-- item gallery sidebar -->
+                            <div class="wrap-item-gallery m-b-10">
+                                <a class="item-gallery bg-img1" href="images/gallery-02.jpg" data-lightbox="gallery"
+                                   style="background-image: url('images/gallery-02.jpg');"></a>
+                            </div>
+
+                            <!-- item gallery sidebar -->
+                            <div class="wrap-item-gallery m-b-10">
+                                <a class="item-gallery bg-img1" href="images/gallery-03.jpg" data-lightbox="gallery"
+                                   style="background-image: url('images/gallery-03.jpg');"></a>
+                            </div>
+
+                            <!-- item gallery sidebar -->
+                            <div class="wrap-item-gallery m-b-10">
+                                <a class="item-gallery bg-img1" href="images/gallery-04.jpg" data-lightbox="gallery"
+                                   style="background-image: url('images/gallery-04.jpg');"></a>
+                            </div>
+
+                            <!-- item gallery sidebar -->
+                            <div class="wrap-item-gallery m-b-10">
+                                <a class="item-gallery bg-img1" href="images/gallery-05.jpg" data-lightbox="gallery"
+                                   style="background-image: url('images/gallery-05.jpg');"></a>
+                            </div>
+
+                            <!-- item gallery sidebar -->
+                            <div class="wrap-item-gallery m-b-10">
+                                <a class="item-gallery bg-img1" href="images/gallery-06.jpg" data-lightbox="gallery"
+                                   style="background-image: url('images/gallery-06.jpg');"></a>
+                            </div>
+
+                            <!-- item gallery sidebar -->
+                            <div class="wrap-item-gallery m-b-10">
+                                <a class="item-gallery bg-img1" href="images/gallery-07.jpg" data-lightbox="gallery"
+                                   style="background-image: url('images/gallery-07.jpg');"></a>
+                            </div>
+
+                            <!-- item gallery sidebar -->
+                            <div class="wrap-item-gallery m-b-10">
+                                <a class="item-gallery bg-img1" href="images/gallery-08.jpg" data-lightbox="gallery"
+                                   style="background-image: url('images/gallery-08.jpg');"></a>
+                            </div>
+
+                            <!-- item gallery sidebar -->
+                            <div class="wrap-item-gallery m-b-10">
+                                <a class="item-gallery bg-img1" href="images/gallery-09.jpg" data-lightbox="gallery"
+                                   style="background-image: url('images/gallery-09.jpg');"></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="sidebar-gallery w-full">
+                        <span class="mtext-101 cl5">
+                            About Us
+                        </span>
+
+                        <p class="stext-108 cl6 p-t-27">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur maximus vulputate hendrerit. Praesent faucibus erat vitae rutrum gravida. Vestibulum tempus mi enim, in molestie sem fermentum quis.
+                        </p>
+                    </div>
+              
+        </aside>
+
+
+        <!-- Cart -->
+        <div class="wrap-header-cart js-panel-cart">
+            <div class="s-full js-hide-cart"></div>
+
+            <div class="header-cart flex-col-l p-l-65 p-r-25">
+                <div class="header-cart-title flex-w flex-sb-m p-b-8">
+                    <span class="mtext-103 cl2">
+                        Your Cart
+                    </span>
+
+                    <div class="fs-35 lh-10 cl2 p-lr-5 pointer hov-cl1 trans-04 js-hide-cart">
+                        <i class="zmdi zmdi-close"></i>
+                    </div>
+                </div>
+
+                <div class="header-cart-content flex-w js-pscroll">
+                    <ul class="header-cart-wrapitem w-full">
+                        <li class="header-cart-item flex-w flex-t m-b-12">
+                            <div class="header-cart-item-img">
+                                <img src="images/item-cart-01.jpg" alt="IMG">
+                            </div>
+
+                            <div class="header-cart-item-txt p-t-8">
+                                <a href="#" class="header-cart-item-name m-b-18 hov-cl1 trans-04">
+                                    White Shirt Pleat
+                                </a>
+
+                                <span class="header-cart-item-info">
+                                    1 x $19.00
+                                </span>
+                            </div>
+                        </li>
+
+                        <li class="header-cart-item flex-w flex-t m-b-12">
+                            <div class="header-cart-item-img">
+                                <img src="images/item-cart-02.jpg" alt="IMG">
+                            </div>
+
+                            <div class="header-cart-item-txt p-t-8">
+                                <a href="#" class="header-cart-item-name m-b-18 hov-cl1 trans-04">
+                                    Converse All Star
+                                </a>
+
+                                <span class="header-cart-item-info">
+                                    1 x $39.00
+                                </span>
+                            </div>
+                        </li>
+
+                        <li class="header-cart-item flex-w flex-t m-b-12">
+                            <div class="header-cart-item-img">
+                                <img src="images/item-cart-03.jpg" alt="IMG">
+                            </div>
+
+                            <div class="header-cart-item-txt p-t-8">
+                                <a href="#" class="header-cart-item-name m-b-18 hov-cl1 trans-04">
+                                    Nixon Porter Leather
+                                </a>
+
+                                <span class="header-cart-item-info">
+                                    1 x $17.00
+                                </span>
+                            </div>
+                        </li>
+                    </ul>
+
+                    <div class="w-full">
+                        <div class="header-cart-total w-full p-tb-40">
+                            Total: $75.00
+                        </div>
+
+                        <div class="header-cart-buttons flex-w w-full">
+                            <a href="shoping-cart.html" class="flex-c-m stext-101 cl0 size-107 bg3 bor2 hov-btn3 p-lr-15 trans-04 m-r-8 m-b-10">
+                                View Cart
+                            </a>
+
+                            <a href="shoping-cart.html" class="flex-c-m stext-101 cl0 size-107 bg3 bor2 hov-btn3 p-lr-15 trans-04 m-b-10">
+                                Check Out
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!-- Slider -->
+        <section class="section-slide">
+            <div class="wrap-slick1">
+                <div class="slick1">
+                    <div class="item-slick1" style="background-image: url(/Content/images/plane1.jpg);">
+                        <div class="container h-full">
+                            <div class="flex-col-l-m h-full p-t-100 p-b-30 respon5">
+                                <div class="layer-slick1 animated visible-false" data-appear="fadeInDown" data-delay="0">
+                                    <span class="ltext-101 cl2 respon2">
+                                        With flug you can
+                                    </span>
+                                </div>
+
+                                <div class="layer-slick1 animated visible-false" data-appear="fadeInUp" data-delay="800">
+                                    <h2 class="ltext-201 cl2 p-t-19 p-b-43 respon1">
+                                        SHIP AND TRIP
+                                    </h2>
+                                </div>
+
+                                <div class="layer-slick1 animated visible-false" data-appear="zoomIn" data-delay="1600">
+                                    <a href="~/Content/createOrder.html.html" class="flex-c-m stext-101 cl0 size-101 bg1 bor1 hov-btn1 p-lr-15 trans-04">
+                                        Create Order
+                                    </a>
+
+                                </div>
+                                <div class="layer-slick1 animated visible-false" data-appear="zoomIn" data-delay="1600">
+                                    <a href="product.html" class="flex-c-m stext-101 cl0 size-101 bg1 bor1 hov-btn1 p-lr-15 trans-04">
+                                        Travel with flug
+                                    </a>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item-slick1" style="background-image: url(/Content/images/hand1.jpg);">
+                        <div class="container h-full">
+                            <div class="flex-col-l-m h-full p-t-100 p-b-30 respon5">
+                                <div class="layer-slick1 animated visible-false" data-appear="rollIn" data-delay="0">
+                                    <span class="ltext-101 cl2 respon2">
+                                        Get what you want from
+                                    </span>
+                                </div>
+
+                                <div class="layer-slick1 animated visible-false" data-appear="lightSpeedIn" data-delay="800">
+                                    <h2 class="ltext-201 cl2 p-t-19 p-b-43 respon1">
+                                        around the world
+                                    </h2>
+                                </div>
+
+
+                                <div class="layer-slick1 animated visible-false" data-appear="zoomIn" data-delay="1600">
+                                    <a href="~/Content/createOrder.html" class="flex-c-m stext-101 cl0 size-101 bg1 bor1 hov-btn1 p-lr-15 trans-04">
+                                        Create Order
+                                    </a>
+
+                                </div>
+                                <div class="layer-slick1 animated visible-false" data-appear="zoomIn" data-delay="1600">
+                                    <a href="product.html" class="flex-c-m stext-101 cl0 size-101 bg1 bor1 hov-btn1 p-lr-15 trans-04">
+                                        Travel with flug
+                                    </a>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item-slick1" style="background-image: url(/Content/images/paris1.jpg);">
+                        <div class="container h-full">
+                            <div class="flex-col-l-m h-full p-t-100 p-b-30 respon5">
+                                <div class="layer-slick1 animated visible-false" data-appear="rotateInDownLeft" data-delay="0">
+                                    <span class="ltext-101 cl2 respon2">
+                                        you also can travel with flug
+                                    </span>
+                                </div>
+
+                                <div class="layer-slick1 animated visible-false" data-appear="rotateInUpRight" data-delay="800">
+                                    <h2 class="ltext-201 cl2 p-t-19 p-b-43 respon1">
+                                        and shop for money
+                                    </h2>
+                                </div>
+
+                                <div class="layer-slick1 animated visible-false" data-appear="zoomIn" data-delay="1600">
+                                    <a href="~/Content/createOrder.html.html" class="flex-c-m stext-101 cl0 size-101 bg1 bor1 hov-btn1 p-lr-15 trans-04">
+                                        Create Order
+                                    </a>
+
+                                </div>
+                                <div class="layer-slick1 animated visible-false" data-appear="zoomIn" data-delay="1600">
+                                    <a href="product.html" class="flex-c-m stext-101 cl0 size-101 bg1 bor1 hov-btn1 p-lr-15 trans-04">
+                                        Travel with flug
+                                    </a>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+   
+    <div>
+        @RenderBody();
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg3 p-t-75 p-b-32">
+        <div class="container">
+            <div class="row">
+                
+
+                <div class="col-sm-6 col-lg-3 p-b-50">
+                    <h4 class="stext-301 cl0 p-b-30">
+                        Help
+                    </h4>
+
+                    <ul>
+                        <li class="p-b-10">
+                            <a href="#" class="stext-107 cl7 hov-cl1 trans-04">
+                                Track Order
+                            </a>
+                        </li>
+
+                        <li class="p-b-10">
+                            <a href="#" class="stext-107 cl7 hov-cl1 trans-04">
+                                Returns
+                            </a>
+                        </li>
+
+                        <li class="p-b-10">
+                            <a href="#" class="stext-107 cl7 hov-cl1 trans-04">
+                                Shipping
+                            </a>
+                        </li>
+
+                        <li class="p-b-10">
+                            <a href="#" class="stext-107 cl7 hov-cl1 trans-04">
+                                FAQs
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-sm-6 col-lg-3 p-b-50">
+                    <h4 class="stext-301 cl0 p-b-30">
+                        GET IN TOUCH
+                    </h4>
+
+                    <p class="stext-107 cl7 size-201">
+                        Any questions? Visit our social media
+                    </p>
+
+                    <div class="p-t-27">
+                        <a href="#" class="fs-18 cl7 hov-cl1 trans-04 m-r-16">
+                            <i class="fa fa-facebook"></i>
+                        </a>
+
+                        <a href="#" class="fs-18 cl7 hov-cl1 trans-04 m-r-16">
+                            <i class="fa fa-instagram"></i>
+                        </a>
+
+                        <a href="#" class="fs-18 cl7 hov-cl1 trans-04 m-r-16">
+                            <i class="fa fa-pinterest-p"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-lg-3 p-b-50">
+                    <h4 class="stext-301 cl0 p-b-30">
+                        Newsletter
+                    </h4>
+
+                    <form>
+                        <div class="wrap-input1 w-full p-b-4">
+                            <input class="input1 bg-none plh1 stext-107 cl7" type="text" name="email" placeholder="email@example.com">
+                            <div class="focus-input1 trans-04"></div>
+                        </div>
+
+                        <div class="p-t-18">
+                            <button class="flex-c-m stext-101 cl0 size-103 bg1 bor1 hov-btn2 p-lr-15 trans-04">
+                                Subscribe
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+
+
+            <p class="stext-107 cl6 txt-center">
+                <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                Copyright &copy;
+                <script>document.write(new Date().getFullYear());</script> All rights reserved
+                <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+
+            </p>
+        </div>
+        
+    </footer>
+    <!-- Back to top -->
+    <div class="btn-back-to-top" id="myBtn">
+        <span class="symbol-btn-back-to-top">
+            <i class="zmdi zmdi-chevron-up"></i>
+        </span>
+    </div>
+    <!--===============================================================================================-->
+    <script src=@Url.Content("/Content/vendor/jquery/jquery-3.2.1.min.js")></script>
+    <!--===============================================================================================-->
+    <script src=@Url.Content("/Content/vendor/animsition/js/animsition.min.js")></script>
+    <!--===============================================================================================-->
+    <script src=@Url.Content("/Content/vendor/bootstrap/js/popper.js")></script>
+    <script src=@Url.Content("/Content/vendor/bootstrap/js/bootstrap.min.js")></script>
+    <!--===============================================================================================-->
+    <script src="vendor/select2/select2.min.js"></script>
+    <script>
+        $(".js-select2").each(function () {
+            $(this).select2({
+                minimumResultsForSearch: 20,
+                dropdownParent: $(this).next('.dropDownSelect2')
+            });
+        })
+    </script>
+    <!--===============================================================================================-->
+    <script src=@Url.Content("/Content/vendor/daterangepicker/moment.min.js")></script>
+    <script src=@Url.Content("/Content/vendor/daterangepicker/daterangepicker.js")></script>
+    <!--===============================================================================================-->
+    <script src=@Url.Content("/Content/vendor/slick/slick.min.js")></script>
+    <script src=@Url.Content("/Content/js/slick-custom.js")></script>
+    <!--===============================================================================================-->
+    <script src=@Url.Content("/Content/vendor/parallax100/parallax100.js")></script>
+    <script>
+        $('.parallax100').parallax100();
+    </script>
+    <!--===============================================================================================-->
+    <script src="vendor/MagnificPopup/jquery.magnific-popup.min.js"></script>
+    <script>
+        $('.gallery-lb').each(function () { // the containers for all your galleries
+            $(this).magnificPopup({
+                delegate: 'a', // the selector for gallery item
+                type: 'image',
+                gallery: {
+                    enabled: true
+                },
+                mainClass: 'mfp-fade'
+            });
+        });
+    </script>
+    <!--===============================================================================================-->
+    <script src=@Url.Content("/Content/vendor/isotope/isotope.pkgd.min.js")></script>
+    <!--===============================================================================================-->
+    <script src=@Url.Content("/Content/vendor/sweetalert/sweetalert.min.js")></script>
+    <script>
+        $('.js-addwish-b2').on('click', function (e) {
+            e.preventDefault();
+        });
+
+        $('.js-addwish-b2').each(function () {
+            var nameProduct = $(this).parent().parent().find('.js-name-b2').html();
+            $(this).on('click', function () {
+                swal(nameProduct, "is added to wishlist !", "success");
+
+                $(this).addClass('js-addedwish-b2');
+                $(this).off('click');
+            });
+        });
+
+        $('.js-addwish-detail').each(function () {
+            var nameProduct = $(this).parent().parent().parent().find('.js-name-detail').html();
+
+            $(this).on('click', function () {
+                swal(nameProduct, "is added to wishlist !", "success");
+
+                $(this).addClass('js-addedwish-detail');
+                $(this).off('click');
+            });
+        });
+
+        /*---------------------------------------------*/
+
+        $('.js-addcart-detail').each(function () {
+            var nameProduct = $(this).parent().parent().parent().parent().find('.js-name-detail').html();
+            $(this).on('click', function () {
+                swal(nameProduct, "is added to cart !", "success");
+            });
+        });
+
+    </script>
+    <!--===============================================================================================-->
+    <script src=@Url.Content("/Content/vendor/perfect-scrollbar/perfect-scrollbar.min.js")></script>
+    <script>
+        $('.js-pscroll').each(function () {
+            $(this).css('position', 'relative');
+            $(this).css('overflow', 'hidden');
+            var ps = new PerfectScrollbar(this, {
+                wheelSpeed: 1,
+                scrollingThreshold: 1000,
+                wheelPropagation: false,
+            });
+
+            $(window).on('resize', function () {
+                ps.update();
+            })
+        });
+    </script>
+    <!--===============================================================================================-->
+    <script src=@Url.Content("/Content/js/main.js")></script>
+
+
+</body>
+</html>
